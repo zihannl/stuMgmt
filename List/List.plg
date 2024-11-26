@@ -1,0 +1,93 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: List - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/List.res" /d "_DEBUG" /d "_AFXDLL" "E:\网校\专题讲座\VC精通情况下怎样加强效率讲座\cell\第四阶段数据库\DAO学籍系统\List\List.rc"" 
+Creating temporary file "C:\DOCUME~1\zyhshw\LOCALS~1\Temp\RSP35.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/List.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\网校\专题讲座\VC精通情况下怎样加强效率讲座\cell\第四阶段数据库\DAO学籍系统\List\Add.cpp"
+"E:\网校\专题讲座\VC精通情况下怎样加强效率讲座\cell\第四阶段数据库\DAO学籍系统\List\AddObject.cpp"
+"E:\网校\专题讲座\VC精通情况下怎样加强效率讲座\cell\第四阶段数据库\DAO学籍系统\List\CreateDialog.cpp"
+"E:\网校\专题讲座\VC精通情况下怎样加强效率讲座\cell\第四阶段数据库\DAO学籍系统\List\Del.cpp"
+"E:\网校\专题讲座\VC精通情况下怎样加强效率讲座\cell\第四阶段数据库\DAO学籍系统\List\DeleObject.cpp"
+"E:\网校\专题讲座\VC精通情况下怎样加强效率讲座\cell\第四阶段数据库\DAO学籍系统\List\DisDialog.cpp"
+"E:\网校\专题讲座\VC精通情况下怎样加强效率讲座\cell\第四阶段数据库\DAO学籍系统\List\EditDialog.cpp"
+"E:\网校\专题讲座\VC精通情况下怎样加强效率讲座\cell\第四阶段数据库\DAO学籍系统\List\LinkButton.cpp"
+"E:\网校\专题讲座\VC精通情况下怎样加强效率讲座\cell\第四阶段数据库\DAO学籍系统\List\List.cpp"
+"E:\网校\专题讲座\VC精通情况下怎样加强效率讲座\cell\第四阶段数据库\DAO学籍系统\List\ListDlg.cpp"
+"E:\网校\专题讲座\VC精通情况下怎样加强效率讲座\cell\第四阶段数据库\DAO学籍系统\List\Seer.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\zyhshw\LOCALS~1\Temp\RSP35.tmp" 
+Creating temporary file "C:\DOCUME~1\zyhshw\LOCALS~1\Temp\RSP36.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/List.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\网校\专题讲座\VC精通情况下怎样加强效率讲座\cell\第四阶段数据库\DAO学籍系统\List\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\zyhshw\LOCALS~1\Temp\RSP36.tmp" 
+Creating temporary file "C:\DOCUME~1\zyhshw\LOCALS~1\Temp\RSP37.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/List.pdb" /debug /machine:I386 /out:"Debug/List.exe" /pdbtype:sept 
+".\Debug\Add.obj"
+".\Debug\AddObject.obj"
+".\Debug\CreateDialog.obj"
+".\Debug\Del.obj"
+".\Debug\DeleObject.obj"
+".\Debug\DisDialog.obj"
+".\Debug\EditDialog.obj"
+".\Debug\LinkButton.obj"
+".\Debug\List.obj"
+".\Debug\ListDlg.obj"
+".\Debug\Seer.obj"
+".\Debug\StdAfx.obj"
+".\Debug\List.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\zyhshw\LOCALS~1\Temp\RSP37.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Add.cpp
+AddObject.cpp
+CreateDialog.cpp
+Del.cpp
+DeleObject.cpp
+DisDialog.cpp
+EditDialog.cpp
+LinkButton.cpp
+List.cpp
+ListDlg.cpp
+Seer.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\zyhshw\LOCALS~1\Temp\RSP39.tmp" with contents
+[
+/nologo /o"Debug/List.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\Add.sbr"
+".\Debug\AddObject.sbr"
+".\Debug\CreateDialog.sbr"
+".\Debug\Del.sbr"
+".\Debug\DeleObject.sbr"
+".\Debug\DisDialog.sbr"
+".\Debug\EditDialog.sbr"
+".\Debug\LinkButton.sbr"
+".\Debug\List.sbr"
+".\Debug\ListDlg.sbr"
+".\Debug\Seer.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\zyhshw\LOCALS~1\Temp\RSP39.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+List.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

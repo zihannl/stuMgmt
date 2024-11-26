@@ -1,0 +1,677 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\List.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\List.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\Book.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\ACER.ICO"
+IDI_ICON3               ICON    DISCARDABLE     "res\\FIRE.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 List"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "List 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_LIST_DIALOG DIALOGEX 0, 0, 410, 282
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_STATICEDGE | WS_EX_APPWINDOW
+MENU IDR_MENU1
+FONT 10, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    WS_TABSTOP,73,7,326,218
+    COMBOBOX        IDC_COMBO1,8,25,52,91,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "开始",IDC_STRAT,"Button",BS_OWNERDRAW | WS_TABSTOP,8,52,
+                    52,14
+    CONTROL         "增加记录",IDC_ADD,"Button",BS_OWNERDRAW | WS_TABSTOP,8,
+                    78,50,14
+    CONTROL         "删除记录",IDC_DELE,"Button",BS_OWNERDRAW | WS_TABSTOP,8,
+                    110,50,14
+    CONTROL         "修改记录",IDC_EDIT,"Button",BS_OWNERDRAW | WS_TABSTOP,8,
+                    140,50,14
+    CONTROL         "查寻记录",IDC_SERCH,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    8,172,50,14
+    LTEXT           "班级选择：",IDC_STATIC,9,10,41,8
+    CONTROL         "全部记录",IDC_ALL,"Button",BS_OWNERDRAW | WS_TABSTOP,8,
+                    206,50,14
+END
+
+IDD_ADDDIALOG DIALOG DISCARDABLE  0, 0, 193, 147
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,136,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,136,24,50,14
+    LTEXT           "学号：",IDC_STATIC,14,14,25,8
+    EDITTEXT        IDC_EDIT1,45,13,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,45,36,40,14,ES_AUTOHSCROLL
+    LTEXT           "姓名：",IDC_STATIC,14,39,25,8
+    LTEXT           "",IDC_STATIC,14,64,8,8
+    EDITTEXT        IDC_EDIT3,45,59,40,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC,14,89,8,8
+    EDITTEXT        IDC_EDIT4,45,84,40,14,ES_AUTOHSCROLL
+END
+
+IDD_CREATDIALOG DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "创建班级"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "创建",ID_CREATE,28,56,50,14
+    PUSHBUTTON      "取消",IDCANCEL,93,55,50,14
+    COMBOBOX        IDC_COMBO1,89,25,48,73,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "选择班级：",IDC_STATIC,29,27,41,8
+END
+
+IDD_DISDIALOG DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "删除班级"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "删除",ID_DELE,25,60,50,14
+    PUSHBUTTON      "取消",IDCANCEL,99,60,50,14
+    COMBOBOX        IDC_COMBO1,101,28,48,80,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "选择班级：",IDC_STATIC,28,31,41,8
+END
+
+IDD_ADDOBJECT DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "增加科目"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "增加",ID_ADD,28,58,50,14
+    PUSHBUTTON      "取消",IDCANCEL,97,58,50,14
+    LTEXT           "选择科目：",IDC_STATIC,33,25,41,8
+    COMBOBOX        IDC_COMBO1,94,24,48,105,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_DELEOBJECT DIALOG DISCARDABLE  0, 0, 187, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "删除科目"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "删除",ID_DELE,23,66,50,14
+    PUSHBUTTON      "取消",IDCANCEL,105,65,50,14
+    COMBOBOX        IDC_COMBO1,105,28,48,63,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "选择科目：",IDC_STATIC,29,33,41,8
+END
+
+IDD_ADD DIALOG DISCARDABLE  0, 0, 187, 184
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "增加记录"
+FONT 10, "System"
+BEGIN
+    CONTROL         "增加",ID_ADD,"Button",BS_OWNERDRAW | WS_TABSTOP,37,156,
+                    46,14
+    CONTROL         "取消",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,116,
+                    154,43,14
+    LTEXT           "学号：",IDC_STATIC,15,18,25,8
+    EDITTEXT        IDC_XUE,43,14,40,14,ES_AUTOHSCROLL
+    LTEXT           "姓名：",IDC_STATIC,15,38,25,8
+    EDITTEXT        IDC_NAME,43,36,40,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC1,15,58,19,8
+    EDITTEXT        IDC_EDIT1,44,56,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,43,80,40,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC2,15,83,20,8
+    LTEXT           "",IDC_STATIC3,15,108,28,8
+    LTEXT           "",IDC_STATIC4,94,16,22,8
+    EDITTEXT        IDC_EDIT3,43,104,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,116,16,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,116,37,40,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC5,94,40,22,8
+    EDITTEXT        IDC_EDIT6,116,58,40,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC6,94,61,22,8
+    EDITTEXT        IDC_EDIT7,116,82,40,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC7,94,85,22,8
+    LTEXT           "",IDC_STATIC8,94,107,22,8
+    EDITTEXT        IDC_EDIT8,116,105,40,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC9,15,136,23,8
+    EDITTEXT        IDC_EDIT9,43,131,40,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC10,94,133,17,8
+    EDITTEXT        IDC_EDIT10,116,130,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DEL DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "删除记录"
+FONT 10, "System"
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,130,7,50,14
+    CONTROL         "Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,130,
+                    24,50,14
+    LTEXT           "输入学号：",IDC_STATIC,17,26,41,8
+    EDITTEXT        IDC_EDIT1,58,25,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,58,47,40,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "密码：",IDC_STATIC,22,51,25,8
+END
+
+IDD_SER DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,28,65,50,14
+    CONTROL         "Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,105,
+                    63,50,14
+    COMBOBOX        IDC_COMBO1,15,31,48,89,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,74,31,48,44,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,130,31,40,14,ES_AUTOHSCROLL
+    LTEXT           "选择查寻条件：",IDC_STATIC,15,14,57,8
+END
+
+IDD_EDIT DIALOG DISCARDABLE  0, 0, 212, 174
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    CONTROL         "OK",ID_EDIT,"Button",BS_OWNERDRAW | WS_TABSTOP,30,153,
+                    50,14
+    CONTROL         "Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,137,
+                    153,50,14
+    LTEXT           "学号：",IDC_STATIC,19,17,25,8
+    LTEXT           "姓名：",IDC_STATIC,19,40,25,8
+    EDITTEXT        IDC_EDIT1,44,15,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,44,38,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "",IDC_STATIC1,19,62,25,8
+    LTEXT           "",IDC_STATIC2,19,88,25,10
+    EDITTEXT        IDC_EDIT3,44,62,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,44,89,40,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC3,19,112,25,8
+    EDITTEXT        IDC_EDIT5,44,112,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,44,136,40,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC4,19,138,25,8
+    EDITTEXT        IDC_EDIT7,145,15,40,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC5,116,21,21,8
+    EDITTEXT        IDC_EDIT8,145,39,40,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC6,116,45,22,8
+    EDITTEXT        IDC_EDIT9,145,62,40,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC7,116,68,22,8
+    EDITTEXT        IDC_EDIT10,145,88,40,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC8,116,95,29,8
+    LTEXT           "",IDC_STATIC9,116,112,29,12
+    EDITTEXT        IDC_EDIT11,145,112,40,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC10,116,141,29,8
+    EDITTEXT        IDC_EDIT12,145,135,40,14,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "List Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "List\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "List.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "List 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_LIST_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 400
+        VERTGUIDE, 8
+        VERTGUIDE, 50
+        VERTGUIDE, 60
+        VERTGUIDE, 73
+        VERTGUIDE, 242
+        VERTGUIDE, 290
+        VERTGUIDE, 340
+        VERTGUIDE, 349
+        VERTGUIDE, 355
+        BOTTOMMARGIN, 275
+        HORZGUIDE, 29
+        HORZGUIDE, 160
+        HORZGUIDE, 197
+    END
+
+    IDD_ADDDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        VERTGUIDE, 14
+        VERTGUIDE, 45
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_CREATDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DISDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_ADDOBJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DELEOBJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+
+    IDD_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        VERTGUIDE, 15
+        VERTGUIDE, 31
+        VERTGUIDE, 43
+        VERTGUIDE, 89
+        VERTGUIDE, 94
+        VERTGUIDE, 100
+        VERTGUIDE, 116
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_DEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        VERTGUIDE, 58
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_SER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        VERTGUIDE, 19
+        VERTGUIDE, 44
+        VERTGUIDE, 55
+        VERTGUIDE, 116
+        VERTGUIDE, 145
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+        HORZGUIDE, 15
+        HORZGUIDE, 38
+        HORZGUIDE, 62
+        HORZGUIDE, 88
+        HORZGUIDE, 112
+        HORZGUIDE, 135
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CREATDIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0xbbd2, 0xe0b0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xfeb6, 0xe0b0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xfdc8, 0xe0b0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xc4cb, 0xe0b0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xe5ce, 0xe0b0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xf9c1, 0xe0b0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xdfc6, 0xe0b0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xcbb0, 0xe0b0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xc5be, 0xe0b0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xaeca, 0xe0b0, "\000" 
+    0
+END
+
+IDD_DISDIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0xbbd2, 0xe0b0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xfeb6, 0xe0b0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xfdc8, 0xe0b0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xc4cb, 0xe0b0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xe5ce, 0xe0b0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xf9c1, 0xe0b0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xdfc6, 0xe0b0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xcbb0, 0xe0b0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xc5be, 0xe0b0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xaeca, 0xe0b0, "\000" 
+    0
+END
+
+IDD_ADDOBJECT DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0xfdca, 0xa7d1, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xefce, 0xedc0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xafbb, 0xa7d1, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xa2d3, 0xefd3, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xfed5, 0xced6, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xfac0, 0xb7ca, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xd8b5, 0xedc0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xfac9, 0xefce, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xefd3, 0xc4ce, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xe5cc, 0xfdd3, "\000" 
+    0
+END
+
+IDD_DELEOBJECT DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0xfdca, 0xa7d1, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xefce, 0xedc0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xafbb, 0xa7d1, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xa2d3, 0xefd3, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xfed5, 0xced6, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xfac0, 0xb7ca, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xd8b5, 0xedc0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xfac9, 0xefce, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xefd3, 0xc4ce, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xe5cc, 0xfdd3, "\000" 
+    0
+END
+
+IDD_LIST_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 9, 0
+0xd8b9, 0xd5b1, 0xe0b0, 0xb6bc, "\000" 
+    0
+END
+
+IDD_SER DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0xfdca, 0xa7d1, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xefce, 0xedc0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xafbb, 0xa7d1, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xa2d3, 0xefd3, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xfed5, 0xced6, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xfac0, 0xb7ca, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xd8b5, 0xedc0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xfac9, 0xefce, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xefd3, 0xc4ce, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xe5cc, 0xfdd3, "\000" 
+    IDC_COMBO2, 0x403, 2, 0
+0x003e, 
+    IDC_COMBO2, 0x403, 2, 0
+0x003d, 
+    IDC_COMBO2, 0x403, 2, 0
+0x003c, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR2             CURSOR  DISCARDABLE     "res\\cursor2.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\114.BMP"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\115.BMP"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\radio.bmp"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "创建班级"
+    BEGIN
+        MENUITEM "增加班级",                    ID_ADDBUT
+        MENUITEM SEPARATOR
+        MENUITEM "删除班级",                    ID_DELEBUT
+    END
+    POPUP "增减科目"
+    BEGIN
+        MENUITEM "增加科目",                    ID_ADDOBJCET
+        MENUITEM SEPARATOR
+        MENUITEM "删除科目",                    ID_DELEOBJECT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 List(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\List.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
