@@ -26,5 +26,6 @@ public:
 
 public:
 	static std::string& trim_l(std::string &str);
+	static std::string& trim_r(std::string &str);
 };
 
