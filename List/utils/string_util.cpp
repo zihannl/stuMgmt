@@ -1,6 +1,7 @@
 #include "string_util.h"
 #include <windows.h>
 
+
 string_util::string_util()
 {
 }
@@ -23,4 +24,9 @@ std::string& string_util::trim_r(std::string &str)
 
 	str.erase(str.find_last_not_of(" \n\r\t") + 1);
 	return str;
+}
+
+std::string& string_util::trim(std::string &str)
+{
+	return trim_l(trim_r(str));
 }
