@@ -31,5 +31,6 @@ public:
 	static std::string& reverse(std::string &str);
 
 	static std::string& to_upper(std::string &str);
+	static std::string to_upper_copy(std::string &str);
 };
 
