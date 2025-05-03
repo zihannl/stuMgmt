@@ -166,3 +166,29 @@ bool string_util::is_empty(std::string &str)
 {
 	return str.size() > 0 ? true : false;
 }
+
+std::string string_util::format(const std::string fmt, ...)
+{
+	std::string str_ret;
+	int size = ((int)fmt.size()) * 2 + 50;
+	va_list ap;
+	while (true)
+	{
+		str_ret.resize(size);
+		va_start(ap, fmt);
+		int n = vsnprintf((char *)str_ret.data(), size, fmt.c_str(), ap);
+		va_end(ap);
+		if (n > -1 && n < size)
+		{
+			str_ret.resize(n);
+			return str_ret;
+		}
+
+		if (n > -1)
+			size = n + 1;
+		else
+			size *= 2;
+	}
+
+	return str_ret;
+}
