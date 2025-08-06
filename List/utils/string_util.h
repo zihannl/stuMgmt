@@ -48,5 +48,7 @@ public:
 	static bool is_empty(std::string &str);
 
 	static std::string format(const std::string fmt, ...);
+	static std::string& append_format(std::string& str, const std::string fmt, ...);
 };
+
 
